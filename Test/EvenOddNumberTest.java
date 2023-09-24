@@ -7,19 +7,18 @@ public class EvenOddNumberTest {
     @Test
     public void testEvenNumber() {
         MainHW mainHW = new MainHW();
-        assertTrue(mainHW.evenOddNumber(4)); // Здесь 4 - четное число
+        assertTrue(mainHW.evenOddNumber(4));  // Положительное четное число
+        assertTrue(mainHW.evenOddNumber(0));  // Ноль считается четным
+        assertTrue(mainHW.evenOddNumber(-4)); // Отрицательное четное число
+
     }
 
     @Test
     public void testOddNumber() {
         MainHW mainHW = new MainHW();
-        assertFalse(mainHW.evenOddNumber(7)); // Здесь 7 - нечетное число
-    }
+        assertFalse(mainHW.evenOddNumber(7));   // Положительное нечетное число
+        assertFalse(mainHW.evenOddNumber(-7));  // Отрицательное нечетное число
 
-    @Test
-    public void testZero() {
-        MainHW mainHW = new MainHW();
-        assertTrue(mainHW.evenOddNumber(0)); // Здесь 0 - четное число
     }
 }
 
