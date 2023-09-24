@@ -8,18 +8,21 @@ public class MainHW {
 
 
         public static boolean numberInInterval(int number) {
-            // Метод проверяет, попадает ли переданное число number в интервал (25;100)
-            // и возвращает true, если попадает, и false, если не попадает.
+
             return number > 25 && number < 100;
         }
 
     // HW 3.2. Нужно написать метод, который проверяет, попадает ли переданное число в интервал (25;100) и возвращает true, если попадает и false - если нет,
     // покрыть тестами метод на 100%
 
-    public static boolean evenOddNumber(int n) {
-        // Метод проверяет, является ли целое число n чётным (true) либо нечётным (false).
-        return n % 2 == 0;
+    public boolean evenOddNumber(int n) {
+        if (n % 2 == 0) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
-    }
+
+}
 
